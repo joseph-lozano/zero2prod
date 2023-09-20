@@ -1,3 +1,5 @@
+name: Publish
+
 on: [push]
 jobs:
   deploy:
@@ -9,17 +11,23 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - uses: dtolnay/rust-toolchain@stable
-      # Run your project's build step
-      # - name: Build
-      #   run: npm install && npm run build
-      - name: Install mdbook
-        run: cargo install mdbook
 
-      - name: Build
+      - name: Download mdBook
         run: |
-          cd notes
-          mdbook build
+          wget https://github.com/rust-lang/mdBook/releases/download/v0.4.34/mdbook-v0.4.34-x86_64-unknown-linux-gnu.tar.gz
+
+      - name: Extract mdBook
+        run: |
+          tar -xzf mdbook-v0.4.34-x86_64-unknown-linux-gnu.tar.gz
+
+      - name: Move mdBook to PATH
+        run: |
+          sudo mv mdbook /usr/local/bin/
+
+      - name: Build book
+        run: |
+          cd notes && mdbook build
+
       - name: Publish
         uses: cloudflare/pages-action@1
         with:
