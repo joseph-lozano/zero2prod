@@ -1,0 +1,9 @@
+[book]
+authors = ["Joseph Lozano"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Notes for Zero to Production in Rust"
+[output.html]
+preferred-dark-theme = "ayu"
+default-theme = "rust"
