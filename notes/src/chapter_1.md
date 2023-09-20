@@ -46,4 +46,4 @@ cargo watch -x check -x test -x run
 
 The recommended Github actions CI is found on [Github](https://gist.github.com/LukeMathWalker/5ae1107432ce283310c3e601fac915f3)
 
-And thats it for chapter 1!
+And thats it for chapter 1, Onward to [Chapter 2](./chapter_2.md)!
