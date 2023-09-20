@@ -14,4 +14,6 @@ I will not be following the book exactly. Notably, I will be diverting from usin
 These notes will be exist in the zero2prod project directory as I work on it.
 I will attempt to keep my notes and the proejct progress in sync.
 
+You can find the Repository for this project at https://github.com/joseph-lozano/zero2prod
+
 Onwards to [Chapter 1 - Getting Started](./chapter_1.md)!
