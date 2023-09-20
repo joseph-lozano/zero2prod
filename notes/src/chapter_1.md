@@ -12,7 +12,7 @@ I will be using VSCode with the rust-analyzer add-on.
 ## Linking
 
 Section 1.4.1 gave tips for setting up a faster linker.
-I added the configuration to [`.cargo/config.toml`](https://github.com/joseph-lozano/zero2prod-notes/tree/main/zero2prod/.cargo/config.toml), making sure I installed llvm and exported the flags recommended by `brew install llvm`.
+I added the configuration to [`.cargo/config.toml`](https://github.com/joseph-lozano/zero2prod/tree/main/.cargo/config.toml), making sure I installed llvm and exported the flags recommended by `brew install llvm`.
 
 ````toml
 # On Windows
